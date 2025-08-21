@@ -1,0 +1,44 @@
+h1 {
+    color: rgb(154, 1, 1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: rgb(255, 247, 241); ;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-photo {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.image-only-header {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0;
+  box-shadow: none;
+}
+
+/* Make the banner span edge-to-edge */
+.image-only-header img {
+  display: block;
+  width: 100%;
+  height: auto;          /* keeps original proportions */
+}

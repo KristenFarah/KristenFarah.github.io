@@ -3,54 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Showcase – Kristen Farah's Teaching Portfolio</title>
+  <title>Project Showcase – Kristen Farah's Teaching Portfolio - Projects</title>
+  <link rel="stylesheet" href="starter.css">
 
-  <style>
-    /* Inline page-specific styles (you can move these to styles.css) */
-    .flex-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
-    .project-card {
-      flex: 1 1 150px;
-      background-color: #FFEEE7;
-      border: 1px solid #9A0101;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
-    }
-    .project-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-    .project-card h3, .project-card h4 {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      color: #2c3e50;
-    }
-  </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1 style="color: rgb(154, 1, 1);">Kristen Farah's Teaching Portfolio</h1>
-  </header>
+   <!-- HEADER -->
+ <header class="image-only-header">
+  <img src="Images/Header.png" alt="Header banner">
+</header>
 
   <!-- NAVIGATION MENU -->
   <nav>
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="teaching.html">Teaching Practice</a></li>
-      <li><a href="projects.html">Project Showcase</a></li>
-      <li><a href="worksamples.html">Samples of Work</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
-    </ul>
+    <div class="container">
+        <ul class="nav">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="teaching.html">Teaching Practice</a></li>
+          <li><a href="projects.html">Project Showcase</a></li>
+          <li><a href="worksamples.html">Samples of Work</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
   </nav>
 
   <!-- MAIN CONTENT -->
@@ -58,16 +33,11 @@
 
     <!-- SECTION: Page intro -->
     <section>
-      <h2 style="color: rgb(154, 1, 1);">Project Showcase</h2>
+      <h2>Project Showcase</h2>
       <p>Selected projects demonstrating skills in Food Technology, Design & Technology, Industrial Technology, Textiles Technology, and Digital Design.</p>
     </section>
-
-    <!-- ARTICLE: Flexbox grid of projects -->
-    <article aria-labelledby="projects-title">
-      <h2 id="projects-title">Projects</h2>
-
+ 
       <div class="flex-container">
-
         <div class="project-card">
           <img src="Images/Dysphagia.png" width="500" height="300" alt="Photo of final project for Dysphagia Patient" />
           <h4>TECH211</h4>
@@ -92,11 +62,6 @@
           <p>A footstool designed for Taronga Zoo’s merchandise store, inspired by the Arabian oryx to raise awareness of endangered species.</p>
         </div>
 
-        <div class="project-card">
-          <img src="Images/Timber_Tray.png" width="500" height="300" alt="CAD Photo of timber chopping board project" />
-          <h4>TECH205</h4>
-          <p>An introductory timber chopping board project commonly taught in schools, supported by CAD planning.</p>
-        </div>
 
         <div class="project-card">
           <img src="Images/Textiles_Embroidery.png" width="500" height="300" alt="Photo of textiles embroidery project" />
@@ -104,11 +69,6 @@
           <p>Embroidery task incorporating multiple techniques on felt, with LED lights added to enhance appeal.</p>
         </div>
 
-        <div class="project-card">
-          <img src="Images/Temperature_Controlled_Fan.png" width="500" height="300" alt="Photo of temperature-controlled fan CAD project" />
-          <h4>TECH211</h4>
-          <p>Arduino project: a temperature-controlled fan that automatically turns on when the room reaches 25 °C.</p>
-        </div>
 
         <div class="project-card">
           <img src="Images/Wooden_Dog_Lamp.png" width="250" height="200" alt="Photo of wooden dog lamp project" />
@@ -122,6 +82,7 @@
 
   <!-- FOOTER -->
   <footer>
+    <div class="container"></div>
     <p>© 2025 Kristen Farah</p>
   </footer>
 
