@@ -8,11 +8,11 @@
 
 /* ---------- 1) CSS Reset / Base ----------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap'); /* google font*/
 
 *, *::before, *::after {
   box-sizing: border-box;   /* Include padding & border in total size for all elements + pseudo-elements */
-}
+}  
 html, body { 
   margin: 0;    /* Removes default browser margin */
   padding: 0;   /* Removes default browser padding */
@@ -36,8 +36,8 @@ img {
   --shadow: 0 4px 12px rgba(0,0,0,0.08);    /* Subtle shadow for depth */
   --spacing: 16px;         /* base spacing unit */
   --maxw: 1100px;          /* content width */
-  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;  /* Body font */
-  --font-head: "Outfit", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;   /* Headings font */
+  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Didact;  /* Body font with Google font added*/
+  --font-head: "Outfit", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;   /* Headings font with google font addded */
 }
 
 /* ---------- 3) Page Defaults --------------- */
@@ -103,7 +103,7 @@ header h1 {
   color: var(--head);                                 /* Special header colour */
 }
 nav {
-  background: #333;             /* Dark grey background for nav bar */
+  background: #ffbfbf;             /* Dark grey background for nav bar */
   font-size: 0.95rem;             /* Slightly smaller font in navigation */
   width: 100%;                    /* Spans full width */
   margin: 32px auto;              /* Space above page content; no top gap */
@@ -128,10 +128,10 @@ nav a {
   color: white;         /* White link text */
   text-decoration: none;  /* Remove underline/other decorations from text/links */
   padding: 14px 16px;      /* Space inside link area */
-  border-radius: 8px;     /* Slightly rounded corners */
+  border-radius: 1px;     /* Slightly rounded corners */
 }
 nav a:hover { 
-  background: rgba(255,255,255,0.15);   /* Light background on hover */
+  background: #860101;   /* Light background on hover */
 }
 nav a:focus-visible {     
   outline: 2px solid #fff;              /* white outline for increased accessibility/ keyboard-focus styling */
@@ -186,7 +186,7 @@ table {
   width: 100%;                /* Table spans full width */
   border-collapse: collapse;  /* Removes double borders */
   margin-top: 10px;           /* Space above table */
-  font-family: Arial, sans-serif;     /* Table font */
+  font-family: Didact, sans-serif;     /* Table font */
 }
 th, td {
   border: 1px solid #ccc;   /* Light grey cell borders */
@@ -273,15 +273,15 @@ label {
 input[type="text"], input[type="email"], textarea {
   width: 100%;                    /* Full width fields */
   padding: 10px 12px;             /* Internal spacing */
-  border: 1px solid #d4d7dd;    /* Light border */
+  border: 1px solid rgb(134, 1, 1);    /* Light border */
   border-radius: 10px;            /* Rounded corners */
-  background: #fff;             /* White background */
-  transition: border-color 0.2s, box-shadow 0.2s;     /* Smooth focus effect */
+  background: #FFFFFF;             /* White background */
+  transition: border-color 0.2s, box-shadow 0.5s;     /* Smooth focus effect */
 }
 input:focus, textarea:focus {
   outline: none;                                  /* Removes default outline */
   border-color: var(--brand);                     /* Brand border on focus */
-  box-shadow: 0 0 0 3px rgba(28,76,150,0.15);   /* Glow on focus */
+  box-shadow: 0 0 0 1px rgba(134, 1, 1);   /* Glow on focus */
 }
 textarea { 
   min-height: 140px;        /* Minimum height */
@@ -289,14 +289,14 @@ textarea {
 }
 button, input[type="submit"] {
   background: var(--brand);   /* Brand colour */
-  color: white;             /* White text */
+  color: #FFF7F1;             /* White text */
   border: none;               /* No border */
   padding: 10px 16px;         /* Internal spacing */
   border-radius: 10px;        /* Rounded corners */
   cursor: pointer;            /* Pointer on hover */
 }
 button:hover, input[type="submit"]:hover {
-  background: #163d79;          /* Darker brand colour on hover */
+  background: rgb(134, 1, 1);          /* Darker brand colour on hover */
 }
 .error {
   color: red;

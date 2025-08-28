@@ -17,28 +17,77 @@
   <nav>
     <div class="container">
         <ul class="nav">
-          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="teaching.html">Teaching Practice</a></li>
           <li><a href="projects.html">Project Showcase</a></li>
           <li><a href="worksamples.html">Samples of Work</a></li>
+          <li><a class="active" href="resume.html">Resume</a></li>
+          <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </div>
   </nav>
 
-  <!--Main content area for my page in line with semantic HTML will change this after-->
-  <main>
-    <section>
-      <article class="profile">
-        <div class="profile-text">
-        <h2>About Me</h2>
-        <p>Biography text insert</p>
-       <div class="Profile Photo">
-  <img src="Images/IMG_1.png" alt="Curved rounded image of myself" width="190" height="200">
-</div>
-      </article>
+  <!--Main content area for my page in line with semantic HTML-->
+ <main>
+    <section class="section">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Your details</legend>
+          <!-- Form text input for Full Name -->
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Kristen Farah" required minlength="6">
+          <!-- Form text input for Email address -->
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
+          <!-- checkbox group for reason for contact *IM NOT SURE HOW TO MAKE IT NOT BOLD THE CHECKBOX*-->
+          <label for="Reason for Contact">Reason for contact - Select all that apply:</label>
+          <br>
+        <label>
+          <input type="checkbox" name="reason" value="collaborate" required>
+            Interested in collaborating
+          </label><br>
+        <label>
+          <input type="checkbox" name="reason" value="work">
+            Availability for work
+          </label><br>
+        <label>
+          <input type="checkbox" name="reason" value="other">
+            Other
+          </label>
+          <br>
+          <!-- Form text input for Message -->
+          <label for="message">Message</label>
+          <textarea id="message" name="message" type="message" placeholder="How can I help?" required minlength="8"></textarea>
+          <!-- honeypot anti-spam field - this is used to trap any potential bots -->
+          <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
+          <!-- button tag used for input, in line with Semantic HTML -->
+          <button type="submit">Send</button>
+
+        </fieldset>
+      </form>
+
+      <!-- This is the section for links to socials -->
+    <section class="section" aria-labelledby="socials">
+      <h2 id="socials">My Socials, Add Me!</h2>
+      <ul>
+     <li><a href="http://linkedin.com/in/kristen-farah-137396381/" rel="noopener">LinkedIn</a></li>
+      <!-- etc -->
+      </ul>
     </section>
+
+    <section class="section">
+      <h2>Relaxing Background Music</h2>
+      <p>Click play to listen to some relaxing music whilst filling out the form!</p>
+      <audio controls>
+      <source src="media/deep_meditation.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+
   </main>
   <!-- FOOTER -->
   <footer>
