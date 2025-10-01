@@ -1,11 +1,10 @@
 <!DOCTYPE HTML>
-<!-- About page using HTML5 UP "Read Only" layout -->
+<!-- Teaching Practice page using HTML5 UP "Read Only" layout -->
 <html>
   <head>
-    <title>Kristen Farah's Teaching Portfolio - About</title>
+    <title>Teaching Practice — Kristen Farah</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!-- Use the theme CSS, not starter.css -->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body class="is-preload">
@@ -21,8 +20,8 @@
       <nav id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="about.html">About</a></li>
-          <li><a href="teachingpractice.html">Teaching Practice</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="teachingpractice.html">Teaching Practice</a></li>
           <li><a href="projects.html">Project Showcase</a></li>
           <li><a href="samplesofwork.html">Samples of Work</a></li>
           <li><a href="resume.html">Resume</a></li>
@@ -45,56 +44,43 @@
     <div id="wrapper">
       <div id="main">
 
-        <!-- Header image -->
+        <!-- Hero -->
         <section id="hero">
           <div class="image main" data-position="center">
+            <!-- If your file is actually in 'Images/Header.png' (capital I), change this path -->
             <img src="images/Header.png" alt="Header banner">
           </div>
         </section>
 
-        <!-- About content -->
-        <section id="about">
+        <!-- Teaching Philosophy -->
+        <section id="philosophy">
           <div class="container">
             <header class="major">
-              <h2>About Me</h2>
-              <h7>I am a pre-service teacher majoring in Food Technology & Design and Technology, focused on inclusive, hands-on learning.</h7>
+              <h2>My Teaching Practice</h2>
+              <p>Inclusive, supportive, and connected to real-world contexts.</p>
             </header>
 
-            <!-- Icons/infographic row -->
-            <div class="box alt">
+            <p>
+              I believe education is a transformative force that empowers students to reach their potential and contribute positively to society. 
+              My teaching philosophy is grounded in creating an inclusive and supportive learning environment where every student feels valued, 
+              respected, and capable of success. I aim to inspire curiosity, critical thinking, and a love of lifelong learning by connecting 
+              classroom content to real-world issues and students’ lived experiences. By fostering collaboration, creativity, and resilience, 
+              I seek to equip students not only with knowledge but also with the skills and confidence they need to navigate an ever-changing world.
+            </p>
+
+            <p>Below is a quote that evokes my teaching philosophy!</p>
+
+            <!-- Quote image -->
+            <div class="box alt" style="margin-top: 1.25rem;">
               <div class="row gtr-50 gtr-uniform">
-                <!-- Full-width image -->
                 <div class="col-12">
-                  <span class="image fit"><img src="images/images/IMG_2.png" alt="Infographic of my majors and minors"></span>
+                  <span class="image fit">
+                    <!-- FIXED: removed duplicate 'images/' -->
+                    <img src="images/images/NelsonMandela.png" alt="Teaching philosophy quote by Nelson Mandela">
+                  </span>
                 </div>
               </div>
             </div>
-
-            <!-- About Me -->
-            <div class="row gtr-50 gtr-uniform">
-                <p>
-                  Hi! I'm Kristen Farah, currently in my third year at
-                  <a href="https://www.acu.edu.au/" target="_blank" rel="noopener">Australian Catholic University (ACU)</a>
-                  studying a Bachelor of Education (Secondary) / Bachelor of Arts (Design Innovation and Technologies).
-                  I major in Food Technology and Design and Technology, with minors in Industrial Technology (Timber and Metal work) and Computing.
-                  I’m passionate about practical learning that helps students build real-world skills in the kitchen, the workshop, and beyond.
-                </p>
-            </div>
-
-            <!-- Teaching philosophy -->
-            <section class="card" style="margin-top: 2rem;">
-              <h3>My Teaching Philosophy</h3>
-              <p>
-                I design inclusive, hands-on learning that builds confidence, responsibility, and curiosity.
-                TAS education empowers students with practical and creative skills for life beyond school.
-              </p>
-              <h4>Top 3 Teaching Goals</h4>
-              <ol>
-                <li>Foster creativity through real-world design challenges.</li>
-                <li>Develop safe, practical skills in kitchen and workshop settings.</li>
-                <li>Encourage problem-solving and reflective practice.</li>
-              </ol>
-            </section>
           </div>
         </section>
 
@@ -114,7 +100,10 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-
+    <script>
+      // Only set textContent if the element exists
+      var y = document.getElementById('y');
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

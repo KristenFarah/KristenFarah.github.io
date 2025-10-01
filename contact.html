@@ -1,99 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kristen Farah's Teaching Portfolio - Contact</title>
-  <link rel="stylesheet" href="starter.css">
-</head>
-<body>
+<!DOCTYPE HTML>
+<!-- Contact page using HTML5 UP "Read Only" layout -->
+<html>
+  <head>
+    <title>Contact — Kristen Farah</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      /* Checkbox tweaks so they look right */
+      #contact-form fieldset { margin: 1rem 0; }
+      #contact-form label { font-weight: 400; }
+      #contact-form input[type="checkbox"] { margin-right: 0.5rem; }
+      #contact-form fieldset legend { font-weight: 600; margin-bottom: 0.5rem; }
+    </style>
+  </head>
+  <body class="is-preload">
 
-  <!-- HEADER -->
- <header class="image-only-header">
-  <img src="Images/Header.png" alt="Header banner">
-</header>
+    <!-- Header (left rail) -->
+    <section id="header">
+      <header>
+        <span class="image avatar"><img src="images/avatar.jpg" alt="Kristen Farah avatar" /></span>
+        <h1 id="logo"><a href="index.html">Kristen Farah</a></h1>
+        <p>Last Updated — 1/10/2025</p>
+      </header>
 
-  <!-- NAVIGATION MENU -->
-  <nav>
-    <div class="container">
-        <ul class="nav">
+      <nav id="nav">
+        <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="teaching.html">Teaching Practice</a></li>
+          <li><a href="teachingpractice.html">Teaching Practice</a></li>
           <li><a href="projects.html">Project Showcase</a></li>
-          <li><a href="worksamples.html">Samples of Work</a></li>
-          <li><a  href="resume.html">Resume</a></li>
+          <li><a href="samplesofwork.html">Samples of Work</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a class="active" href="contact.html">Contact Me</a></li>
         </ul>
-    </div>
-  </nav>
+      </nav>
 
-  <!--Main content area for my page in line with semantic HTML-->
- <main>
-    <section class="section">
-      <h2>Contact Me</h2>
-      <form id="contact-form" action="https://formsubmit.co/695f6bb98c8b081560edf49a15e173d6" method="post" autocomplete="on">
-        <fieldset>
-          <legend>Your details</legend>
-          <!-- Form text input for Full Name -->
-          <label for="name">Full Name</label>
-          <input id="name" name="name" type="text" placeholder="Kristen Farah" required minlength="6">
-          <!-- Form text input for Email address -->
-          <label for="email">Email Address</label>
-          <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
-          <!-- checkbox group for reason for contact *IM NOT SURE HOW TO MAKE IT NOT BOLD THE CHECKBOX*-->
-          <label for="Reason for Contact">Reason for contact - Select all that apply:</label>
-          <br>
-        <label>
-          <input type="checkbox" name="reason" value="collaborate" required>
-            Interested in collaborating
-          </label><br>
-        <label>
-          <input type="checkbox" name="reason" value="work">
-            Availability for work
-          </label><br>
-        <label>
-          <input type="checkbox" name="reason" value="other">
-            Other
-          </label>
-          <br>
-          <!-- Form text input for Message -->
-          <label for="message">Message</label>
-          <textarea id="message" name="message" type="message" placeholder="How can I help?" required minlength="8"></textarea>
-          <!-- honeypot anti-spam field - this is used to trap any potential bots -->
-          <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
-          <!-- button tag used for input, in line with Semantic HTML -->
-          <button type="submit">Send</button>
-
-        </fieldset>
-      </form>
-
-      <!-- This is the section for links to socials -->
-    <section class="section" aria-labelledby="socials">
-      <h2 id="socials">My Socials, Add Me!</h2>
-      <ul>
-     <li><a href="http://linkedin.com/in/kristen-farah-137396381/" rel="noopener">LinkedIn</a></li>
-      <!-- etc -->
-      </ul>
+      <footer>
+        <ul class="icons">
+          <li><a href="https://www.facebook.com/kristen.farah/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="https://www.instagram.com/kristenfarahh/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="https://kristenfarah.github.io/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+          <li><a href="http://linkedin.com/in/kristen-farah-137396381/" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
+        </ul>
+      </footer>
     </section>
 
-    <section class="section">
-      <h2>Relaxing Background Music</h2>
-      <p>Click play to listen to some relaxing music whilst filling out the form!</p>
-      <audio controls>
-      <source src="media/deep_meditation.mp3" type="audio/mp3">
-      Your browser does not support the audio tag.
-      </audio>
-    </section>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <div id="main">
 
+        <!-- Hero -->
+        <section id="hero">
+          <div class="image main" data-position="center">
+            <img src="images/Header.png" alt="Header banner" />
+          </div>
+        </section>
 
-  </main>
+        <!-- Contact -->
+        <section id="contact">
+          <div class="container">
+            <header class="major">
+              <h2>Contact Me</h2>
+              <p>Use the form below or connect with me on LinkedIn.</p>
+            </header>
+
+            <form id="contact-form"
+                  action="https://formsubmit.co/695f6bb98c8b081560edf49a15e173d6"
+                  method="post" autocomplete="on">
+
+              <!-- FormSubmit helpers -->
+              <input type="hidden" name="_subject" value="Portfolio Contact Form" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="index.html" />
+              <!-- honeypot -->
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true" />
+
+              <div class="row gtr-uniform">
+                <div class="col-6 col-12-xsmall">
+                  <label for="name">Full Name</label>
+                  <input id="name" name="name" type="text" placeholder="Kristen Farah" required minlength="2" />
+                </div>
+
+                <div class="col-6 col-12-xsmall">
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email" />
+                </div>
+
+                <div class="col-12">
+                  <fieldset>
+                    <legend>Reason for contact — select all that apply:</legend>
+
+                    <input type="checkbox" id="reason-collab" name="reason[]" value="collaborate">
+                    <label for="reason-collab">Interested in collaborating</label>
+
+                    <input type="checkbox" id="reason-work" name="reason[]" value="work">
+                    <label for="reason-work">Availability for work</label>
+
+                    <input type="checkbox" id="reason-other" name="reason[]" value="other">
+                    <label for="reason-other">Other</label>
+                  </fieldset>
+                </div>
+
+                <div class="col-12">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="How can I help?" rows="6" required minlength="8"></textarea>
+                </div>
+
+                <div class="col-12">
+                  <ul class="actions">
+                    <li><button type="submit" class="primary">Send</button></li>
+                    <li><input type="reset" value="Reset" /></li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+
+            <hr />
+
+            <!-- Socials -->
+            <h3 id="socials">My Socials</h3>
+            <ul class="icons">
+              <li><a href="http://linkedin.com/in/kristen-farah-137396381/" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
+            </ul>
+
+            <!-- Background Music -->
+            <section style="margin-top: 1.5rem;">
+              <h3>Relaxing Background Music</h3>
+              <p>Click play to listen while filling out the form.</p>
+              <audio controls>
+                <source src="media/deep_meditation.mp3" type="audio/mpeg" />
+                Your browser does not support the audio tag.
+              </audio>
+            </section>
+
+          </div>
+        </section>
+
+      </div>
+
   <!-- FOOTER -->
   <footer>
     <div class="container"></div>
     <p>© 2025 Kristen Farah</p>
   </footer>
 
-</body>
+    <!-- Theme scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      var y = document.getElementById('y');
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
