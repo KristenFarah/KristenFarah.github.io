@@ -12,9 +12,11 @@
     <!-- Header (left rail) -->
     <section id="header">
       <header>
-        <span class="image avatar"><img src="images/avatar.jpg" alt="Kristen Farah avatar" /></span>
+        <span class="image avatar">
+          <img src="images/images/Profile_photo.png" alt="Kristen Farah avatar" />
+        </span>
         <h1 id="logo"><a href="index.html">Kristen Farah</a></h1>
-        <p>Last Updated — 1/10/2025</p>
+        <p>Last Updated — 23/10/2025</p>
       </header>
 
       <nav id="nav">
@@ -23,7 +25,6 @@
           <li><a href="about.html">About</a></li>
           <li><a href="teachingpractice.html">Teaching Practice</a></li>
           <li><a class="active" href="projects.html">Project Showcase</a></li>
-          <li><a href="samplesofwork.html">Samples of Work</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact Me</a></li>
@@ -47,7 +48,6 @@
         <!-- Hero (optional to match Home) -->
         <section id="hero">
           <div class="image main" data-position="center">
-            <!-- If your image lives in 'Images/Header.png', change the path -->
             <img src="images/Header.png" alt="Header banner" />
           </div>
         </section>
@@ -62,7 +62,7 @@
           </div>
         </section>
 
-        <!-- Grid of projects using HTML5 UP feature cards -->
+        <!-- Grid of projects -->
         <section id="projects-grid">
           <div class="container">
             <div class="features">
@@ -81,7 +81,7 @@
                 <a href="#" class="image"><img src="images/images/Lasagne_Redesign.png" alt="Woolworths lasagne redesign panels and packaging mockups" /></a>
                 <div class="inner">
                   <h4>TECH306 — Lasagne Redesign</h4>
-                  <p>Reformulation and product brochure targeting dual‑income families: sodium reduction, fibre increase, sustainability claims, and affordability.</p>
+                  <p>Reformulation and product brochure targeting dual-income families: sodium reduction, fibre increase, sustainability claims, and affordability.</p>
                 </div>
               </article>
 
@@ -99,7 +99,7 @@
                 <a href="#" class="image"><img src="images/images/TimberStool.png" alt="Timber footstool inspired by Arabian oryx" /></a>
                 <div class="inner">
                   <h4>TECH205 — Timber Footstool</h4>
-                  <p>Zoo‑store concept inspired by the Arabian oryx to promote endangered species awareness.</p>
+                  <p>Zoo-store concept inspired by the Arabian oryx to promote endangered species awareness.</p>
                 </div>
               </article>
 
@@ -125,26 +125,21 @@
           </div>
         </section>
 
-        <!-- Addition of a "back to the top" button -->
-        <section id="links">
-          <div class="container">
-            <ul class="actions">
-              <li><a href="projects.html#projects-grid" class="button">Back to Top</a></li>
-            </ul>
-          </div>
-        </section>
+        <!--Centered Back to Top Button -->
+        <div class="back-to-top-container">
+          <button id="backToTop" class="button">Back to Top</button>
+        </div>
 
       </div>
 
- 
+      <!-- FOOTER -->
+      <footer>
+        <div class="container"></div>
+        <p>© 2025 Kristen Farah</p>
+      </footer>
+    </div>
 
-        <!-- FOOTER -->
-                <footer>
-                    <div class="container"></div>
-                    <p>© 2025 Kristen Farah</p>
-                </footer>
-
-    <!-- THEME SCRIPTS (required) -->
+    <!-- THEME SCRIPTS -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -152,6 +147,13 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+    <!-- Custom JavaScript for Back to Top -->
+    <script>
+      const backToTopButton = document.getElementById("backToTop");
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>

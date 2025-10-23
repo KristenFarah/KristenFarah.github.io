@@ -2742,7 +2742,7 @@ input, select, textarea {
 			#header > header .avatar {
 				display: block;
 				margin: 0 auto 2.25em auto;
-				width: 8em;
+				width: 15em;
 			}
 
 			#header > header h1 {
@@ -3076,7 +3076,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: #dca4a0;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
@@ -3205,6 +3205,9 @@ input, select, textarea {
 				#header > footer {
 					padding: 1.5em;
 				}
+
+		
+
 
 		/* Main */
 
@@ -3338,4 +3341,27 @@ label {
 /* lighter labels; keep legend as the heading */
 #contact-form fieldset label { font-weight: 400; display: block; margin: .5rem 0; }
 #contact-form fieldset legend { font-weight: 600; margin-bottom: .5rem; }
+
+/* CSS of interactive feature --> back to top */
+.back-to-top-container {
+  text-align: center;   /* centres the button horizontally */
+  margin: 40px 0;       /* adds space above and below */
+}
+
+#backToTop {
+  background-color: #860101;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #dca4a0;
+}
+
 

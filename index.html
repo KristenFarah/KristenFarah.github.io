@@ -16,9 +16,9 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+        <span class="image avatar"><img src="images/images/Profile_photo.png" alt="Kristen Farah avatar" /></span>
 					<h1 id="logo"><a href="#">Kristen Farah</a></h1>
-					<p>Last Updated - 1/10/2025</p>
+        			<p>Last Updated — 23/10/2025</p>
 				</header>
 				<nav id="nav">
 					<ul>
@@ -26,7 +26,6 @@
 					<li><a href="about.html">About</a></li>
           			<li><a href="teachingpractice.html">Teaching Practice</a></li>
 					<li><a href="projects.html">Project Showcase</a></li>
-         			<li><a href="samplesofwork.html">Samples of Work</a></li>
 					<li><a href="resume.html">Resume</a></li>
 					<li><a href="resources.html">Resources</a></li>
 					<li><a href="contact.html">Contact Me</a></li>
@@ -129,7 +128,10 @@
 							</div>
 						</div>
 						</section>
-
+        <!--Centered Back to Top Button -->
+        <div class="back-to-top-container">
+          <button id="backToTop" class="button">Back to Top</button>
+        </div>
         <!-- FOOTER -->
                 <footer>
                     <div class="container"></div>
@@ -145,5 +147,12 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-	</body>
+	    <!-- Custom JavaScript for Back to Top -->
+    <script>
+      const backToTopButton = document.getElementById("backToTop");
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+</body>
 </html>
